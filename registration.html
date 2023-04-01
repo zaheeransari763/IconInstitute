@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Icon Computer Institute | Registration</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets\css\registration.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="cross">
+	<a href="index.html"><i class="fa fa-times"></i></a>
+	</div>
+	<h1>Registration</h1>
+	<form id="myform">
+		<input type="text" id="name" placeholder="First Name" required="">
+		<input type="text" id="lname" placeholder="Last Name" required="">
+		<input type="text" id="pno" placeholder="phone No." maxlength="10" required="">
+		<input type="email" id="mail" placeholder="email" required="">
+		<input type="password" id="pass" placeholder="password" required="">
+        <label>Date of Birth</label><br><br>
+		<input type="date" id="date">
+		<textarea id="address" placeholder="Address" rows="3" cols="36" required=""></textarea>
+	    <button id="submitBtn" >Register Now</button>
+	</form>
+	<br>
+</div>
+<div id="overlay-area"></div>
+
+
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    
+    <!-- Our script must be loaded after firebase references -->
+
+<script src="assets/js/registration.js" ></script>
+</html>

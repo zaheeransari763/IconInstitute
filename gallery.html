@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
+</head>
+<body>
+<div class="main">
+	<h1>Students Work</h1>
+	<div id="myBtnContainer">
+		<a href="index.html"><button class="btn"> Back</button></a>
+		<button class="btn active" onclick="filterSelection('all')">Show all</button>
+		<button class="btn" onclick="filterSelection('web')">Illustrator</button>
+		<button class="btn" onclick="filterSelection('graphic')">Graphic</button>
+		<button class="btn" onclick="filterSelection('ms-ofc')">MS-Office</button>
+	</div>
+	<!-- Grid Gallery -->
+	<div class="row">
+		<!-- For WEB -->
+		<div class="column web">
+			<div class="content">
+				<img src="assets/gallery/G6.jpg" alt="web" style="width: 100%">
+			    
+			</div>
+		</div>
+		<div class="column web">
+			<div class="content">
+				<img src="assets/gallery/G19.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+
+		<div class="column web">
+			<div class="content">
+				<img src="assets/gallery/G14.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+		<div class="column graphic">
+			<div class="content">
+				<img src="assets/gallery/G10.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+		<div class="column graphic">
+			<div class="content">
+				<img src="assets/gallery/G11.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+		<div class="column graphic">
+			<div class="content">
+				<img src="assets/gallery/G12.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+		<div class="column web">
+			<div class="content">
+				<img src="assets/gallery/G20.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+		<!-- For GRAPHICS -->
+		<div class="column graphic">
+			<div class="content">
+				<img src="assets/gallery/G13.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+		<div class="column graphic">
+			<div class="content">
+				<img src="assets/gallery/G17.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+		<div class="column web">
+			<div class="content">
+				<img src="assets/gallery/G16.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+		<div class="column web">
+			<div class="content">
+				<img src="assets/gallery/G15.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+		<div class="column web">
+			<div class="content">
+				<img src="assets/gallery/G18.jpg" alt="web" style="width: 100%">
+			</div>
+		</div>
+
+		<!-- For MS-Office -->
+		<div class="column ms-ofc">
+			<div class="content">
+				<video width="360" controls="controls">
+			    	<source src="assets/gallery/v1.mp4" type="video/mp4">
+			    </video>
+			</div>
+		</div>
+		<div class="column ms-ofc">
+			<div class="content">
+				<video width="360" controls="controls">
+			    	<source src="assets/gallery/v2.mp4" type="video/mp4">
+			    </video>
+			</div>
+		</div>
+		<div class="column ms-ofc">
+			<div class="content">
+				<video width="360" controls="controls">
+			    	<source src="assets/gallery/v3.mp4" type="video/mp4">
+			    </video>
+			</div>
+	
+		</div>
+	</div>
+	<!-- End Grid -->
+</div>
+<!-- End main -->
+
+<!-- Script -->
+<script>
+	filterSelection("all") // Execute the function and show all columns
+	function filterSelection(c) {
+		var x, i;
+		x = document.getElementsByClassName("column");
+		if (c == "all") c = "";
+		for (i = 0; i < x.length; i++) {
+			RemoveClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+		}
+	}
+
+	// Show filtered elements
+	function AddClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {
+			  element.className += " " + arr2[i];
+			}
+		}
+	}
+
+	// Hide elements that are not selected
+	function RemoveClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+			  arr1.splice(arr1.indexOf(arr2[i]), 1);
+			}
+		}
+		element.className = arr1.join(" ");
+	}
+
+	// Add active class to the current button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("click", function(){
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		});
+	}
+</script>
+<!-- End Script -->
+</body>
+</html>

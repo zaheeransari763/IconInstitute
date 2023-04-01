@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Icon Computer Institute | Login Page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets\css\login.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+</head>
+<body>
+<div class="cross">
+<a href="index.html"><i class="fa fa-times"></i></a>
+</div>
+<div class="wrapper" id="login_div">
+	<h1>Login</h1>
+	<form>
+		<input type="email" id="mail" placeholder="email" required="">
+		<input type="password" id="password" placeholder="password" required="">
+		<button id="signUp">Log In</button>
+	</form>
+	<div class="bottom-text">
+		<input type="checkbox" name="remember" checked="checked">Remember me
+		<a href="#">Forgot password?</a>
+	</div>
+	<div class="social">
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<br>
+</div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    
+    <!-- Our script must be loaded after firebase references -->
+
+<script src="assets/js/login.js" ></script>
+
+
+</html>

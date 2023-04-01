@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+/* Center website */
+.main {
+  max-width: 80%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color:  #3b5998;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+ Clear floats after rows  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+/*  box-sizing: border-box;
+  width: 380px;
+  height: 260px;*/
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding: 13px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  background-color: #557A95;
+}
+
+.btn.active {
+  background-color: #011C3B;
+  color: #557A95;
+}

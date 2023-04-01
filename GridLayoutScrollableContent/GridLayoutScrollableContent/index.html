@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AutoCAD Work</title>
+		<meta name="description" content="A Masonry-powered grid layout with a motion hover effect on the grid items and a scrollable content view." />
+		<meta name="keywords" content="masonry, grid layout, hover effect, content preview, javascript, gsap, template, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/
+	bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<style>
+		.fa-long-arrow-left{
+			color: #002147;
+			font-size: 3em;
+			margin-left: 15px;
+		}
+		body{
+              background-image: url("img/back1.jpg"); 
+	          background-repeat: no-repeat;
+	          background-size: 100% 100%; 
+	          background-attachment: fixed;
+        }
+	</style>
+	</head>
+	<body class="loading">
+		
+		<main>
+		<a href="E:/Project/mastery-starter/index.html"><span class="fa fa-long-arrow-left" title="Back to Home"></span></a>
+			<div class="grid-wrap">
+				<div class="grid">
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/A1.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Section Elivation</h3>
+						<h4 class="grid__item-number">B05</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/A5.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Single Storage</h3>
+						<h4 class="grid__item-number">A21</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/A2.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Floor Plan</h3>
+						<h4 class="grid__item-number">XB3</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/A4.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Stair & Section</h3>
+						<h4 class="grid__item-number">HK9</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/stair22.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Stair 3D</h3>
+						<h4 class="grid__item-number">FW1</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/A3.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Front Elivation</h3>
+						<h4 class="grid__item-number">DZ5</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/A9.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Verandha</h3>
+						<h4 class="grid__item-number">M02</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/A8.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Master Bed</h3>
+						<h4 class="grid__item-number">KL7</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/A7.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Electric Layout</h3>
+						<h4 class="grid__item-number">UY6</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/6.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Flat Plan</h3>
+						<h4 class="grid__item-number">OP2</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/A11.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Building Design</h3>
+						<h4 class="grid__item-number">EC5</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/A10.png" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Plan</h3>
+						<h4 class="grid__item-number">2VX</h4>
+					</a>
+				</div>
+			</div><!-- /grid-wrap -->
+			<div class="content">
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/A1.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/A5.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/A2.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/A4.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/stair22.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/A3.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/A9.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/A8.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/A7.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/6.jpg" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/A11.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/A10.png" alt="Some image" />
+						<h2 class="content__item-title"></h2>
+					</div>
+					
+				</div><!-- /content__item -->
+				<button class="content__close">Close</button>
+				<!--<svg class="content__indicator icon icon--caret"><use xlink:href="#icon-caret"></use></svg>-->
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>

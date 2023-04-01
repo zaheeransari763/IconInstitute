@@ -1,0 +1,117 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("../images/back1.jpg");
+	background-size: cover;
+	font-family: poppins;
+}
+.wrapper{
+	position: absolute;
+	width: 550px;
+	height: 700px;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	padding: 40px;
+	border-radius: 10px;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	box-shadow: 8px 8px 50px #000;
+}
+h1{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 22px;
+	color: #000;
+	text-align: center;
+	margin-bottom: 6%;
+	font-family: Courgette;
+}
+.wrapper input ,textarea ,select{
+	width: 100%;
+	margin-bottom: 40px;
+}
+.wrapper label{
+	margin-bottom: 70px;
+	color: #656667;
+}
+.wrapper input[type=email] ,.wrapper input[type=text] ,.wrapper textarea,
+.wrapper input[type=date],.wrapper select ,.wrapper input[type=time]{
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	font-size: 16px;
+	opacity: 1;
+	color: #738A9D; 
+}
+.wrapper input[type=date] ,.wrapper input[type=time]{
+	width: 49%;
+}
+.wrapper button{
+	border: none;
+	outline: none;
+	height: 50px;
+	background: #011C3B;
+	color: #fdc800;
+	font-size: 14px;
+	font-weight: bold;
+	width: 100%;
+}
+.wrapper button:hover{
+	color: #011C3B;
+    background-color: #55acce;
+	cursor: pointer;
+}
+.wrapper a{
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.8;
+}
+.wrapper a:hover{
+	color: #fff;
+	opacity: 1;
+}
+#overlay-area{
+	position: absolute;
+	background-color: rgba(0,0,0,0.2);
+	z-index: -5;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+
+.cross{
+	position: absolute;
+	margin-top: -9%;
+	text-align: center;
+	right: -15px;
+}
+.cross a{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+.cross i{
+	padding: 8px 0;
+	color: #fff;
+	cursor: pointer;
+}
+.cross a:nth-child(1){
+	background: #000;
+}
+.wrapper option{
+	background-color: rgba(0,0,0,0.2);
+	border-color: #011C3B;
+	color: #011C3B;
+}
+.wrapper select{
+	cursor: pointer;
+}

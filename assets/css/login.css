@@ -1,0 +1,137 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("../images/bg2.jpg");
+	background-size: cover;
+	font-family: poppins;
+}
+.wrapper{
+	width: 400px;
+	height: 450px;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	padding: 60px 30px;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 8px 8px 50px #000;
+}
+h1{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 22px;
+	color: #000;
+	text-align: center;
+	margin-bottom: 8%;
+	font-family: Courgette;
+}
+.wrapper input{
+	width: 100%;
+	margin-bottom: 40px;
+}
+.wrapper input[type=password] ,.wrapper input[type=email]{
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	outline: none;
+	height: 30px;
+	font-size: 16px;
+	opacity: 1;
+	color: #738A9D; 
+}
+.wrapper button{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #011C3B;
+	color: #55acce;
+	font-size: 14px;
+	font-weight: bold;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.wrapper button:hover{
+	color: #011C3B;
+    background-color: #557A95;
+	cursor: pointer;
+}
+.wrapper a{
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.8;
+}
+.wrapper a:hover{
+	color: #fff;
+	opacity: 1;
+}
+.bottom-text{
+	color: #000;
+}
+.bottom-text input{
+	width: 10%;
+	float: left;
+}
+.bottom-text a{
+	float: right;
+	color: #000;
+}
+.social{
+	margin-top: 12%;
+	text-align: center;
+}
+.social a{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+.social a:nth-child(1){
+	background: #3b5998;
+}
+.social a:nth-child(2){
+	background: #55acce;
+}
+.social a:nth-child(3){
+	background: #0077b5;
+}
+.social a i{
+	padding: 8px 0;
+}
+#overlay-area{
+	position: absolute;
+	background-color: rgba(0,0,0,0.2);
+	z-index: -5;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+
+.cross{
+	margin-top: 8%;
+	text-align: center;
+	position: absolute;
+	right: 36%;
+}
+.cross a{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+.cross i{
+	padding: 8px 0;
+	color: #fff;
+	cursor: pointer;
+}
+.cross a:nth-child(1){
+	background: #000;
+}
